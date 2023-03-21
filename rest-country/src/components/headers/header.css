@@ -1,0 +1,13 @@
+h2{
+    background-color: aqua;
+}
+nav{
+    background-color: blueviolet;
+    padding: 1rem;
+}
+.header-container a{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
