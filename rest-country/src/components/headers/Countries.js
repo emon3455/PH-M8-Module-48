@@ -12,7 +12,7 @@ const Countries = () => {
 
     return (
         <div>
-            <h2>All Country Data loaded {countrys.length}</h2>
+            <h2>Totall Country {countrys.length}</h2>
             <div className="country-container">
                 {
                     countrys.map(country=> <SingleCountry country={country} key={country.cca3}></SingleCountry>)
