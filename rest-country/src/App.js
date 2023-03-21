@@ -6,32 +6,32 @@ function App() {
   return (
     <div className="App">
       
-      {/* <LoadCountry></LoadCountry> */}
+      <LoadCountry></LoadCountry>
 
 
     </div>
   );
 }
 
-// function LoadCountry(){
+function LoadCountry(){
 
-//   const [countries,setCountries] = useState([])
-//   useEffect(()=>{
-//     fetch("https://restcountries.com/v3.1/all")
-//     .then(res=> res.json())
-//     .then(data=> setCountries(data))
-//   },[])
+  const [countries,setCountries] = useState([])
+  useEffect(()=>{
+    fetch("https://restcountries.com/v3.1/all")
+    .then(res=> res.json())
+    .then(data=> setCountries(data))
+  },[])
 
-//   return(
+  return(
 
-//     <div className="">
+    <div className="">
 
-//         <h1 style={{textAlign:"center"}}>Lets Explore All country!!!</h1>
-//         <p>Country We Can Visit: {countries.length}</p>
+        <h1 style={{textAlign:"center"}}>Lets Explore All country!!!</h1>
+        <p>Country We Can Visit: {countries.length}</p>
 
-//     </div>
+    </div>
 
-//   );
-// }
+  );
+}
 
 export default App;
