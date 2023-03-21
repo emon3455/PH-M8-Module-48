@@ -15,7 +15,7 @@ const Countries = () => {
             <h2>All Country Data loaded {countrys.length}</h2>
             <div className="country-container">
                 {
-                    countrys.map(country=> <SingleCountry country={country}></SingleCountry>)
+                    countrys.map(country=> <SingleCountry country={country} key={country.cca3}></SingleCountry>)
                 }
             </div>
         </div>
